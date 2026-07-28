@@ -185,13 +185,13 @@ function resizeCanvas() {
 }
 
 // @ts-ignore
-var ctx,
+var ctx: any,
   // @ts-ignore
-  f,
+  f: any,
   e = 0,
   pos = { x: 0, y: 0 },
   // @ts-ignore
-  lines = [],
+  lines: any[] = [],
   E = {
     debug: true,
     friction: 0.5,
