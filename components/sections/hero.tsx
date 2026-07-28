@@ -44,7 +44,7 @@ export function Hero({ onOpenMediaKit }: HeroProps) {
               className="text-4xl sm:text-5xl lg:text-5xl font-extrabold text-text-primary tracking-tight leading-[1.1]"
             >
               Not a star. Just an ordinary guy —{" "}
-              <span className="text-gradient-gold">with a following that shows up.</span>
+              <span className="text-gradient-accent">with a following that shows up.</span>
             </motion.h1>
 
             {/* Plain Subhead */}
@@ -71,7 +71,7 @@ export function Hero({ onOpenMediaKit }: HeroProps) {
             <motion.div variants={fadeUp} className="flex flex-wrap items-center gap-4 pt-4">
               <a
                 href="#pricing"
-                className="bg-text-tertiary hover:bg-[#ff9d5c] text-surface-base font-bold text-base px-9 py-4 rounded-full transition-all shadow-glow hover:shadow-1 flex items-center gap-2.5 active:scale-95 group cursor-pointer"
+                className="bg-text-tertiary hover:bg-[#33e1ff] text-surface-base font-bold text-base px-9 py-4 rounded-full transition-all shadow-glow hover:shadow-1 flex items-center gap-2.5 active:scale-95 group cursor-pointer"
               >
                 <span>Book a collab</span>
                 <ArrowUpRight className="w-5 h-5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />

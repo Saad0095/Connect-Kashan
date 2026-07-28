@@ -129,7 +129,7 @@ export function FinalCta({ onOpenMediaKit }: FinalCtaProps) {
 
                 <button
                   type="submit"
-                  className="w-full bg-text-tertiary hover:bg-[#ff9d5c] text-surface-base font-bold text-sm sm:text-base py-3.5 rounded-full transition-all shadow-glow flex items-center justify-center gap-2 active:scale-95"
+                  className="w-full bg-text-tertiary hover:bg-[#33e1ff] text-surface-base font-bold text-sm sm:text-base py-3.5 rounded-full transition-all shadow-glow flex items-center justify-center gap-2 active:scale-95"
                 >
                   <span>Send Message</span>
                   <Send className="w-4 h-4" />

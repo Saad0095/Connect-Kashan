@@ -95,7 +95,7 @@ export function CollabPackages({ onOpenMediaKit }: CollabPackagesProps) {
                   onClick={onOpenMediaKit}
                   className={`w-full py-4 px-6 rounded-full font-bold text-base transition-all flex items-center justify-center gap-2 active:scale-95 cursor-pointer ${
                     pkg.popular
-                      ? "bg-text-tertiary text-surface-base hover:bg-[#ff9d5c] shadow-glow"
+                      ? "bg-text-tertiary text-surface-base hover:bg-[#33e1ff] shadow-glow"
                       : "bg-surface-strong text-text-primary border border-border-strong hover:border-text-tertiary hover:text-text-tertiary hover:shadow-glow"
                   }`}
                 >

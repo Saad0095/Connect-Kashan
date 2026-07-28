@@ -33,7 +33,7 @@ function CreativePricing({
                 <div className="relative inline-block z-10">
                     <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-text-primary rotate-[-1deg] tracking-tight relative z-10">
                         {title}
-                        <div className="absolute -right-12 top-0 text-[#ff9d5c] rotate-12 -z-10 opacity-70">
+                        <div className="absolute -right-12 top-0 text-[#33e1ff] rotate-12 -z-10 opacity-70">
                             ✨
                         </div>
                         <div className="absolute -left-8 bottom-0 text-text-tertiary -rotate-12 -z-10 opacity-70">
@@ -139,7 +139,7 @@ function CreativePricing({
                                     "hover:shadow-[6px_6px_0px_0px]",
                                     "hover:translate-x-[-2px] hover:translate-y-[-2px]",
                                     tier.popular
-                                        ? "bg-text-tertiary text-surface-base hover:bg-[#ff9d5c] border-transparent"
+                                        ? "bg-text-tertiary text-surface-base hover:bg-[#33e1ff] border-transparent"
                                         : "bg-surface-base text-text-primary hover:bg-surface-strong"
                                 )}
                             >

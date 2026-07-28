@@ -70,7 +70,7 @@ export function SiteNav({ onOpenMediaKit }: SiteNavProps) {
           </button>
           <a
             href="#pricing"
-            className="bg-text-tertiary hover:bg-[#ff9d5c] text-surface-base font-bold text-sm px-5 py-2.5 rounded-full transition-all flex items-center gap-1.5 shadow-glow hover:shadow-1 active:scale-95"
+            className="bg-text-tertiary hover:bg-[#33e1ff] text-surface-base font-bold text-sm px-5 py-2.5 rounded-full transition-all flex items-center gap-1.5 shadow-glow hover:shadow-1 active:scale-95"
           >
             <span>Book a collab</span>
             <ArrowUpRight className="w-4 h-4" />

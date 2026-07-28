@@ -67,7 +67,7 @@ export function RealVideoShowcase() {
                     href={activeItem.directUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-text-tertiary text-surface-base text-sm font-bold px-7 py-3.5 rounded-full hover:bg-[#ff9d5c] transition-all inline-flex items-center gap-2"
+                    className="bg-text-tertiary text-surface-base text-sm font-bold px-7 py-3.5 rounded-full hover:bg-[#33e1ff] transition-all inline-flex items-center gap-2"
                   >
                     <span>Watch on Instagram Reel</span>
                     <ExternalLink className="w-4 h-4" />

@@ -157,7 +157,7 @@ export function MediaKitDialog({ isOpen, onClose }: MediaKitDialogProps) {
 
               <button
                 type="submit"
-                className="w-full bg-text-tertiary hover:bg-[#ff9d5c] text-surface-base font-bold text-sm py-4 rounded-full shadow-glow transition-all flex items-center justify-center gap-2 active:scale-95 mt-2"
+                className="w-full bg-text-tertiary hover:bg-[#33e1ff] text-surface-base font-bold text-sm py-4 rounded-full shadow-glow transition-all flex items-center justify-center gap-2 active:scale-95 mt-2"
               >
                 <Download className="w-4 h-4" />
                 <span>Download Media Kit PDF</span>

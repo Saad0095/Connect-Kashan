@@ -20,7 +20,7 @@ const config: Config = {
         text: {
           primary: "#f5efe6",
           secondary: "#a89d91",
-          tertiary: "#ff8a3d",
+          tertiary: "#00d8ff",
           inverse: "#d8cfc2",
         },
       },

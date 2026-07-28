@@ -70,7 +70,7 @@ export function StatsBar() {
             Verified Audience Proof
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-text-primary tracking-tight">
-            Impact <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ff9d5c] to-text-tertiary">By The Numbers</span>
+            Impact <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#33e1ff] to-text-tertiary">By The Numbers</span>
           </h2>
         </div>
 

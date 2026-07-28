@@ -61,8 +61,8 @@ export function AnimatedCursor() {
           x: mousePosition.x - 18,
           y: mousePosition.y - 18,
           scale: isClicking ? 0.8 : isHovered ? 1.8 : 1,
-          borderColor: isHovered ? "#ff8a3d" : "rgba(255, 138, 61, 0.4)",
-          backgroundColor: isHovered ? "rgba(255, 138, 61, 0.12)" : "transparent",
+          borderColor: isHovered ? "#00d8ff" : "rgba(0, 216, 255, 0.4)",
+          backgroundColor: isHovered ? "rgba(0, 216, 255, 0.12)" : "transparent",
         }}
         transition={{
           type: "spring",
