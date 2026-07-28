@@ -45,8 +45,8 @@ export function CollabPackages({ onOpenMediaKit }: CollabPackagesProps) {
               className={`relative bg-surface-muted border ${
                 pkg.popular
                   ? "border-text-tertiary shadow-glow"
-                  : "border-border-strong hover:border-text-tertiary/50"
-              } rounded-sm p-8 sm:p-10 flex flex-col justify-between space-y-10 transition-all group`}
+                  : "border-border-strong hover:border-text-tertiary/60"
+              } rounded-sm p-8 sm:p-10 flex flex-col justify-between space-y-10 transition-all group interactive-hover`}
             >
               {pkg.badge && (
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-text-tertiary text-surface-base font-mono text-xs font-bold uppercase px-4 py-1 rounded-full shadow-md">
@@ -93,10 +93,10 @@ export function CollabPackages({ onOpenMediaKit }: CollabPackagesProps) {
               <div className="pt-4 border-t border-border-strong/60 space-y-2">
                 <button
                   onClick={onOpenMediaKit}
-                  className={`w-full py-4 px-6 rounded-full font-bold text-base transition-all flex items-center justify-center gap-2 ${
+                  className={`w-full py-4 px-6 rounded-full font-bold text-base transition-all flex items-center justify-center gap-2 active:scale-95 cursor-pointer ${
                     pkg.popular
                       ? "bg-text-tertiary text-surface-base hover:bg-[#ff9d5c] shadow-glow"
-                      : "bg-surface-strong text-text-primary border border-border-strong hover:border-text-tertiary"
+                      : "bg-surface-strong text-text-primary border border-border-strong hover:border-text-tertiary hover:text-text-tertiary hover:shadow-glow"
                   }`}
                 >
                   <span>Inquire for {pkg.name}</span>

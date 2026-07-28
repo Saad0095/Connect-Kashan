@@ -8,45 +8,45 @@ import { RefreshCw, Smile, Film, Sparkles, MessageCircleHeart } from "lucide-rea
 const PILLARS = [
   {
     step: "01",
-    title: "Everyday, Relatable Life",
-    description: "Capturing authentic Pakistani daily situations — family dynamics, friend groups, market runs, and shared cultural quirks.",
+    title: "Everyday Relatable Life",
+    description: "Capturing real Pakistani daily situations — family dynamics, friend groups, market runs, and shared cultural moments.",
     icon: Smile,
   },
   {
     step: "02",
     title: "Comedy & Skits",
-    description: "Fast-paced, humorous reels crafted with sharp dialogue and natural timing that get shared across WhatsApp & Instagram.",
+    description: "Fast-paced, funny reels crafted with natural dialogue and timing that get shared across WhatsApp & Instagram.",
     icon: Film,
   },
   {
     step: "03",
-    title: "Honest Brand Integrations",
-    description: "Inserting products naturally as solutions inside the storyline — with promo codes, real usage, and zero corporate fluff.",
+    title: "Honest Brand Recommendations",
+    description: "Inserting products naturally as solutions inside the story — with promo codes, real usage, and zero corporate fluff.",
     icon: Sparkles,
   },
   {
     step: "04",
     title: "People Actually Respond",
-    description: "High comment velocity, tag-a-friend engagement, direct link clicks, and genuine audience recommendations that convert.",
+    description: "High comment velocity, tag-a-friend engagement, direct link clicks, and genuine word-of-mouth recommendations.",
     icon: MessageCircleHeart,
   },
 ];
 
 export function ContentPillarsLoop() {
   return (
-    <section className="py-24 bg-surface-base border-b border-border-strong/40 relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-28 sm:py-36 bg-surface-base border-b border-border-strong/40 relative">
+      <div className="max-w-7xl mx-auto px-6">
         
         {/* Section Header */}
         <div className="flex flex-col items-center text-center space-y-4 mb-16">
-          <div className="inline-flex items-center gap-2 text-xs font-mono text-text-tertiary bg-surface-strong px-3 py-1 rounded-xs border border-border-strong">
-            <RefreshCw className="w-3.5 h-3.5 animate-spin" style={{ animationDuration: "12s" }} />
-            <span>The Content Engine</span>
+          <div className="inline-flex items-center gap-2 text-xs font-mono text-text-tertiary bg-surface-strong px-4 py-1.5 rounded-full border border-border-strong font-bold">
+            <RefreshCw className="w-4 h-4 animate-spin text-text-tertiary" style={{ animationDuration: "12s" }} />
+            <span>How The Content Works</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-bold text-text-primary tracking-tight">
-            What I actually post
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-text-primary tracking-tight">
+            What Kashan actually posts
           </h2>
-          <p className="text-text-secondary text-base max-w-xl">
+          <p className="text-text-secondary text-base sm:text-lg max-w-xl">
             A simple 4-step loop that keeps hundreds of thousands of viewers coming back every single week.
           </p>
         </div>
@@ -57,7 +57,7 @@ export function ContentPillarsLoop() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.2 }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8"
         >
           {PILLARS.map((pillar, idx) => {
             const Icon = pillar.icon;
@@ -65,32 +65,32 @@ export function ContentPillarsLoop() {
               <motion.div
                 key={pillar.step}
                 variants={fadeUp}
-                className="group relative bg-surface-muted border border-border-strong hover:border-text-tertiary/60 rounded-sm p-6 flex flex-col justify-between transition-all duration-slow hover:shadow-1"
+                className="group relative bg-surface-muted border border-border-strong hover:border-text-tertiary/60 rounded-sm p-8 flex flex-col justify-between space-y-6 transition-all duration-slow hover:shadow-1 interactive-hover"
               >
-                {/* Step Number Badge */}
-                <div className="flex items-center justify-between mb-6">
-                  <span className="text-2xl font-mono font-bold text-text-tertiary">
+                {/* Step Header */}
+                <div className="flex items-center justify-between">
+                  <span className="text-3xl font-mono font-extrabold text-text-tertiary">
                     {pillar.step}
                   </span>
-                  <div className="w-10 h-10 rounded-xs bg-surface-strong border border-border-strong flex items-center justify-center text-text-tertiary group-hover:border-text-tertiary group-hover:bg-text-tertiary/10 transition-colors">
-                    <Icon className="w-5 h-5" />
+                  <div className="w-12 h-12 rounded-xs bg-surface-strong border border-border-strong flex items-center justify-center text-text-tertiary group-hover:border-text-tertiary group-hover:bg-text-tertiary/10 transition-colors">
+                    <Icon className="w-6 h-6" />
                   </div>
                 </div>
 
                 {/* Content */}
                 <div className="space-y-3">
-                  <h3 className="text-lg font-semibold text-text-primary group-hover:text-text-tertiary transition-colors">
+                  <h3 className="text-xl font-bold text-text-primary group-hover:text-text-tertiary transition-colors">
                     {pillar.title}
                   </h3>
-                  <p className="text-xs sm:text-sm text-text-secondary leading-relaxed font-normal">
+                  <p className="text-sm sm:text-base text-text-secondary leading-relaxed font-normal">
                     {pillar.description}
                   </p>
                 </div>
 
-                {/* Looping Connector Indicator */}
-                <div className="mt-6 pt-4 border-t border-border-strong/60 flex items-center justify-between text-[11px] font-mono text-text-secondary">
+                {/* Footer step indicator */}
+                <div className="pt-4 border-t border-border-strong/60 flex items-center justify-between text-xs font-mono text-text-secondary">
                   <span>Loop step {idx + 1} of 4</span>
-                  <span className="text-text-tertiary opacity-0 group-hover:opacity-100 transition-opacity">
+                  <span className="text-text-tertiary font-bold group-hover:translate-x-1 transition-transform">
                     Next →
                   </span>
                 </div>
@@ -99,11 +99,11 @@ export function ContentPillarsLoop() {
           })}
         </motion.div>
 
-        {/* Bottom Loop Summary Banner */}
-        <div className="mt-12 text-center">
-          <div className="inline-flex items-center gap-3 bg-surface-strong border border-border-strong px-5 py-2.5 rounded-md text-xs font-mono text-text-secondary">
-            <span className="w-2 h-2 rounded-full bg-text-tertiary" />
-            <span>Result: Content that doesn&apos;t get skipped + Brands that get remembered.</span>
+        {/* Bottom Banner */}
+        <div className="mt-14 text-center">
+          <div className="inline-flex items-center gap-3 bg-surface-strong border border-border-strong px-6 py-3 rounded-full text-xs sm:text-sm font-mono text-text-secondary font-semibold shadow-sm">
+            <span className="w-2.5 h-2.5 rounded-full bg-text-tertiary" />
+            <span>Result: Content people don&apos;t skip + Brands that actually get remembered.</span>
           </div>
         </div>
 

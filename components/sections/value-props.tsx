@@ -30,7 +30,7 @@ export function ValueProps() {
   return (
     <section id="why-kashan" className="py-24 bg-surface-muted/40 border-b border-border-strong/40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Header */}
         <div className="flex flex-col items-center text-center space-y-3 mb-16">
           <span className="text-xs font-mono text-text-tertiary bg-surface-strong px-3 py-1 rounded-xs border border-border-strong uppercase">
@@ -79,10 +79,10 @@ export function ValueProps() {
                   </p>
                 </div>
 
-                <div className="pt-4 border-t border-border-strong/60 flex items-center gap-2 text-xs font-mono text-text-tertiary">
+                {/* <div className="pt-4 border-t border-border-strong/60 flex items-center gap-2 text-xs font-mono text-text-tertiary">
                   <span className="w-1.5 h-1.5 rounded-full bg-text-tertiary" />
                   <span>Verified Creator Standard</span>
-                </div>
+                </div> */}
               </motion.div>
             );
           })}

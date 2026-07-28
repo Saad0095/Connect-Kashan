@@ -12,7 +12,7 @@ export function FounderBio() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="bg-surface-strong/60 border border-border-strong rounded-sm p-8 sm:p-14 shadow-1">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-            
+
             {/* Bio Photo Column */}
             <motion.div
               initial="hidden"
@@ -23,7 +23,7 @@ export function FounderBio() {
             >
               <div className="relative aspect-[4/5] rounded-xs overflow-hidden border border-border-strong bg-surface-muted group">
                 <Image
-                  src="/images/kashan-hero.png"
+                  src="/images/kashan-hero3.png"
                   alt="Kashan (@connect.kashan) Photograph"
                   fill
                   sizes="(max-width: 768px) 100vw, 450px"
@@ -31,7 +31,7 @@ export function FounderBio() {
                   className="object-cover object-top group-hover:scale-105 transition-transform duration-slow contrast-[1.05]"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-surface-base/80 via-transparent to-transparent" />
-                
+
                 <div className="absolute bottom-4 left-4 right-4 bg-surface-base/90 backdrop-blur-md p-3.5 rounded-xs border border-border-strong flex items-center justify-between text-sm">
                   <div>
                     <span className="font-bold text-text-primary block">Kashan</span>
